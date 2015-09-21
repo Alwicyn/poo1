@@ -77,3 +77,4 @@ case 2 => Hospital()
 case 3 => Empresa()
 case default => println("Opcion Invalida")
 }
+println ("Hasta luego!!")
