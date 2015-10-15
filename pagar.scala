@@ -67,7 +67,7 @@ def capturarDatosProducto(
   codigos: Array[String],
   i: Int
 ) {
-  println("Ingresa los datos del producto")
+  println("Ingresa  datos del producto")
   println("Nombre: ")
   nombres(i) = readLine()
   println("Precio: ")
