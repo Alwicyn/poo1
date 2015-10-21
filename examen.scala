@@ -2,7 +2,6 @@ def Numeros (){
 
 println ("Numeros Negativos, Positivos y Neutro")
 println ("")
-prinltn ("")
 for (i <- 1 to 20){
   println ("Ingrese un numero")
   var numeros=readInt()
