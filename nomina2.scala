@@ -40,10 +40,10 @@ class Nomina(){
 
 }
 
-class ProfesoresAPagar(p: Profesor, hC:Int, hA: Int){
+class ProfesoresAPagar(p: Profesor, horaCla:Int, horaAse: Int){
   val profesor= p
-  val horasPagarC=hC
-  val horasPagarA=hA
+  val horasPagarC=horaCla
+  val horasPagarA=horaAse
   def pago(): Double = {
       var pago = profesor.precioHora * horasPagarC
       return pago + (profesor.horasasesoria*horasPagarA)
@@ -63,13 +63,13 @@ do{
   var categoria=readLine()
   println(categoria) 
   println("Horas clase: ")
-  var horasC=readInt()
-  println (horasC)
+  var horasCla=readInt()
+  println (horasCla)
   println("Horas asesoria: ")
-  var horasA=readInt()
-  println (horasA)
+  var horasAse=readInt()
+  println (horasAse)
   profesor.categorizar(categoria)
-  nomina.pagar(profesor, horasC, horasA)
+  nomina.pagar(profesor, horasCla, horasAse)
 
   println("Quieres realizar la nomina de otro profesor? (s/n) ")
   respuesta=readChar()
